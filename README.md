@@ -4,7 +4,7 @@
 
 Dự án này tập trung vào việc thiết kế và hiện thực hóa bộ xử lý ảnh thời gian thực trên FPGA. Hệ thống sử dụng thuật toán 3x3 Convolution (Nhân chập) để thực hiện các bộ lọc ảnh phổ biến như Blur (Làm mờ) và Sharpening (Tăng độ sắc nét). Hệ thống được tối ưu hóa bằng kiến trúc Pipeline và Adder Tree để đạt tốc độ xử lý cao, đảm bảo mỗi pixel được xử lý trong mỗi chu kỳ clock.
 
-## 1. Tổng quan hệ thống (System Workflow)
+## 1. Tổng quan hệ thống (System Overview)
 Hệ thống được thiết kế để xử lý ảnh theo quy trình thời gian thực. Luồng dữ liệu hoạt động như sau:
 
 * Đầu vào (Input): Một ảnh Grayscale (64x64 pixel) được chuyển đổi sang định dạng dữ liệu thô (txt/hex) bằng script Python. Dữ liệu này sau đó được nạp vào FPGA thông qua input_interface.
