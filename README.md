@@ -70,8 +70,23 @@ Hệ thống được thiết kế để xử lý ảnh theo quy trình thời g
 | 5 | `p11...p33` | Input | 8-bit(x9) | 9 pixel tạo thành ma trận cửa sổ 3x3 |
 
 ### 4.4 `cnn_sharpening`
+| # | Gate | Type | Bit-width | Mô tả |
+| 1 | `i_clk` | Input | 1-bit | Xung clock hệ thông |
+| 2 | `i_reset` | Input | 1-bit | Có vai trò khởi đọng toàn bộ mạch (active-high) |
+| 3 | `data_valid_in` | Input | 1-bit | Báo dữ liệu đầu vào hợp lệ |
+| 4 | `p11...p33` | Input | 8-bit(x9) | đưa ma trận 3x3 pixel vào convolution |
+| 5 | `o_pixel` | Output | 8-bit | đưa ra 1 pixel sau khi convolution (sharp) |
+| 6 | `data_valid_out` | Output | 1-bit | Báo dữ liệu ra hợp lệ |
 
 ### 4.5 `cnn_blur` 
+
+| # | Gate | Type | Bit-width | Mô tả |
+| 1 | `i_clk` | Input | 1-bit | Xung clock hệ thông |
+| 2 | `i_reset` | Input | 1-bit | Có vai trò khởi đọng toàn bộ mạch (active-high) |
+| 3 | `data_valid_in` | Input | 1-bit | Báo dữ liệu đầu vào hợp lệ |
+| 4 | `p11...p33` | Input | 8-bit(x9) | đưa ma trận 3x3 pixel vào convolution |
+| 5 | `o_pixel` | Output | 8-bit | đưa ra 1 pixel sau khi convolution (blur) |
+| 6 | `data_valid_out` | Output | 1-bit | Báo dữ liệu ra hợp lệ |
 
 ## 5. Luồng hoạt động hệ thống (System Workflow)
 
