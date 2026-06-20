@@ -117,6 +117,8 @@ Hệ thống được thiết kế để xử lý ảnh theo quy trình thời g
 
 <img width="4700" height="3000" alt="image" src="https://github.com/LoVuongChiTon67/FPGA_RealTime_Conv3x3_Processor/blob/main/image/workflow3.png?raw=true" /> 
 
-***2 File Hex này sẽ được chạy dưới file hex_to_image để in ra ảnh***
+***Hai File Hex này sẽ được chạy dưới file hex_to_image để in ra ảnh***
+
+## 6. Kết quả mô phỏng và kiểm chứng (Simulation & Verification)
 
 
