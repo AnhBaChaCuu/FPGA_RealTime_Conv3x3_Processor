@@ -128,4 +128,9 @@ Hình dưới đây thể hiện sự phối hợp nhịp nhàng giữa các tí
 <img src="https://github.com/LoVuongChiTon67/FPGA_RealTime_Conv3x3_Processor/blob/main/image/waveform2.png?raw=true" width="45%" alt="Ảnh 2" />
 <div style="clear: both;"></div>
 
+* **`i_clk` / `i_reset`**: Các tín hiệu nguồn điều khiển toàn bộ trạng thái đồng bộ của mạch tích hợp.
+* **`data_valid_in`**: Được kích hoạt (*High*) báo hiệu luồng pixel đầu vào đã bắt đầu "chảy" vào module `linerbuffer`.
+* **`p11` đến `p33`**: Giá trị của 9 pixel liên tiếp được trích xuất thành công tạo thành cửa sổ trượt $3 \times 3$ tại mỗi chu kỳ clock.
+* **`o_pixel`**: Pixel kết quả tính toán đầu ra sau khi đi qua cấu trúc **Adder Tree** (Cây cộng) tối ưu.
+* **`data_valid_out`**: Tín hiệu này chuyển lên mức cao (*High*) để báo hiệu pixel đầu ra đã ổn định và hợp lệ, sẵn sàng để ghi lại.
 
