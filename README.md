@@ -113,4 +113,4 @@ Hệ thống được thiết kế để xử lý ảnh theo quy trình thời g
 
 ### 3. **Xuất và Tái tạo ảnh (Output Stage)**
 * **Đồng bộ hoá**: Kết quả sau khi tính toán được đưa qua output_controller, tại đây tín hiệu data_valid_out được kích hoạt để báo hiệu rằng dữ liệu tại o_pixel đã sẵn sàng.
-* **Hậu xử lý (Python)**: Các giá trị pixel đầu ra được ghi lại vào file output_data.txt. Script hex_to_image.py sau đó sẽ đọc file này và tái tạo lại thành file ảnh kỹ thuật số để bạn có thể xem và so sánh trực quan.
+* **Hậu xử lý (Python)**: Các giá trị pixel đầu ra được ghi lại vào file output_data.hex. Script hex_to_image.py sau đó sẽ đọc file này và tái tạo lại thành file ảnh kỹ thuật số để bạn có thể xem và so sánh trực quan.
