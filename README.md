@@ -134,3 +134,32 @@ Hình dưới đây thể hiện sự phối hợp nhịp nhàng giữa các tí
 * **`o_pixel`**: Pixel kết quả tính toán đầu ra sau khi đi qua cấu trúc **Adder Tree** (Cây cộng) tối ưu.
 * **`data_valid_out`**: Tín hiệu này chuyển lên mức cao (*High*) để báo hiệu pixel đầu ra đã ổn định và hợp lệ, sẵn sàng để ghi lại.
 
+### 2. **Kết quả trực quan (Visual Results)**
+Sau khi mô phỏng hoàn tất, file dữ liệu đầu ra được script Python `hex_to_image.py` đọc và tái tạo lại thành cấu trúc ảnh kỹ thuật số để đối chiếu trực quan:
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="image/input_origin.png" width="350" alt="Ảnh gốc Input"/>
+      <br>
+      <b>Ảnh gốc (Input - Grayscale 64x64)</b>
+    </td>
+    <td align="center">
+      <img src="image/output_sharpen.png" width="350" alt="Kết quả Sharpen"/>
+      <br>
+      <b>Kết quả sau bộ lọc <i>Sharpening</i> (FPGA)</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="image/input_origin.png" width="350" alt="Ảnh gốc Input"/>
+      <br>
+      <b>Ảnh gốc (Input - Grayscale 64x64)</b>
+    </td>
+    <td align="center">
+      <img src="image/output_blur.png" width="350" alt="Kết quả Blur"/>
+      <br>
+      <b>Kết quả sau bộ lọc <i>Blurring</i> (FPGA)</b>
+    </td>
+  </tr>
+</table>
